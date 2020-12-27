@@ -38,6 +38,9 @@ var vm = new Vue({
         },
         totalPriceWithTax: function() {
             return Math.floor(this.totalPrice * 1.08)
+        },
+        canBuy: function() {
+            return this.totalPrice >= 1000
         }
     }
 })
